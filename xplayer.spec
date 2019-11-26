@@ -7,14 +7,14 @@
 %define build_zeitgeist_plugin 1
 
 Name:           xplayer
-Version:        2.0.2
-Release:        %mkrel 3
+Version:        2.2.3
+Release:        1
 Summary:        Generic media player
 License:        GPL-2.0+ and LGPL-2.1+
 Group:          Video/Players
 Url:            https://github.com/linuxmint/xplayer
 Source:         https://github.com/linuxmint/%{name}/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
-BuildRequires:  gcc-c++
+
 BuildRequires:  gnome-common
 BuildRequires:  gstreamer1.0-plugins-good >= 0.11.93
 # For gst-inspect tool
@@ -45,9 +45,8 @@ BuildRequires:  pkgconfig(shared-mime-info)
 BuildRequires:  pkgconfig(sm)
 BuildRequires:  pkgconfig(x11)
 BuildRequires:  pkgconfig(xapp)
-# Needed for scaletempo (boo#810378, boo#809854).
+
 Requires:       gstreamer1.0-plugins-bad
-# We want a useful set of plugins.
 Requires:       gstreamer1.0-plugins-base
 Requires:       gstreamer1.0-plugins-good
 Requires:       iso-codes
@@ -77,8 +76,8 @@ Obsoletes:	xplayer-browser-plugin <= %{version}-%{release}
 Obsoletes:	xplayer-browser-plugin-gmp <= %{version}-%{release}
 Obsoletes:	xplayer-browser-plugin-vegas <= %{version}-%{release}
 
-BuildRequires:	python3-devel
-BuildRequires:	python3-pylint
+BuildRequires:	python-devel
+BuildRequires:	python-pylint
 
 %description
 xplayer is a media player based on GStreamer for the Cinnamon
@@ -92,8 +91,8 @@ Requires:       %{name} = %{version}
 # Brasero plugin.
 Recommends:     brasero
 # BBC iPlayer plugin.
-Recommends:     python3-beautifulsoup
-Recommends:     python3-httplib2
+Recommends:     python-beautifulsoup4
+Recommends:     python-httplib2
 # Gromit Annotation plugin.
 Suggests:       gromit
 
