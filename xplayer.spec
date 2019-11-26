@@ -153,6 +153,8 @@ f="data/%{name}-bugreport.py"
 %{__mv} -f ${f}.new ${f}
 
 %build
+export CC=gcc
+export CXX=g++
 NOCONFIGURE=1 gnome-autogen.sh
 export BROWSER_PLUGIN_DIR=%{_libdir}/browser-plugins/
 export PYTHON=%{__python3}
