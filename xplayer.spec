@@ -7,7 +7,7 @@
 %define build_zeitgeist_plugin 1
 
 Name:           xplayer
-Version:        2.2.5
+Version:        2.2.6
 Release:        1
 Summary:        Generic media player
 License:        GPL-2.0+ and LGPL-2.1+
