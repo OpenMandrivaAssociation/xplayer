@@ -195,7 +195,6 @@ find %{buildroot} -type f -name "*.la" -delete -print
 %dir %{_libexecdir}/%{name}/
 %endif
 %{_libexecdir}/%{name}/%{name}-bugreport.py*
-%{_libexecdir}/%{name}/__pycache__/
 %{_libdir}/lib%{name}.so.*
 %{_libdir}/girepository-1.0/Xplayer-1.0.typelib
 
