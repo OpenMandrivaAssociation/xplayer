@@ -8,7 +8,7 @@
 
 Name:           xplayer
 Version:        2.4.4
-Release:        3
+Release:        4
 Summary:        Generic media player
 License:        GPL-2.0+ and LGPL-2.1+
 Group:          Video/Players
