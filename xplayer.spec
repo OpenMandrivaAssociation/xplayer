@@ -15,6 +15,11 @@ Group:          Video/Players
 Url:            https://github.com/linuxmint/xplayer
 Source:         https://github.com/linuxmint/%{name}/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  gnome-common
 BuildRequires:  gstreamer1.0-plugins-good >= 0.11.93
 # For gst-inspect tool
